@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/holy-grail/static/css/main.d46f6e5f.css",
+    "main.js": "/holy-grail/static/js/main.2bf07195.js",
+    "static/js/787.d9663b87.chunk.js": "/holy-grail/static/js/787.d9663b87.chunk.js",
+    "static/media/planets.jpg": "/holy-grail/static/media/planets.5edf5ad32592454b0b8a.jpg",
+    "static/media/dyno.jpg": "/holy-grail/static/media/dyno.cccaf150e6833b009261.jpg",
+    "static/media/cats.jpg": "/holy-grail/static/media/cats.e2383e9ad36ee59ed196.jpg",
+    "static/media/dogs.jpg": "/holy-grail/static/media/dogs.5558919496a6ec6f01b5.jpg",
+    "static/media/chubaka.jpg": "/holy-grail/static/media/chubaka.082a04fa94ae24c63e95.jpg",
+    "index.html": "/holy-grail/index.html",
+    "main.d46f6e5f.css.map": "/holy-grail/static/css/main.d46f6e5f.css.map",
+    "main.2bf07195.js.map": "/holy-grail/static/js/main.2bf07195.js.map",
+    "787.d9663b87.chunk.js.map": "/holy-grail/static/js/787.d9663b87.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d46f6e5f.css",
+    "static/js/main.2bf07195.js"
+  ]
+}
