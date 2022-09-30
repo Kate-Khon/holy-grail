@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import cat from './images/cats.jpg';
 import chubaka from './images/chubaka.jpg';
@@ -16,6 +16,8 @@ const pictures = [
 ];
 
 const buttonColors = ['yellow', 'red', 'blue', 'green'];
+
+let timeoutId: NodeJS.Timeout;
 
 const mixPictures = (): string[] => {
   const numbers = [0, 1, 2, 3, 4];
@@ -35,6 +37,7 @@ function App() {
   const [buttonColor, setButtonColor] = useState<string>('green');
 
   const changePicture = (): void => {
+    clearTimeout(timeoutId);
     let newButtonColor = buttonColors[Math.floor(Math.random() * buttonColors.length)];
 
     while (newButtonColor === buttonColor) {
@@ -43,10 +46,12 @@ function App() {
     
     setCurrentPictures(mixPictures);
     setButtonColor(newButtonColor);
+    timeoutId = setTimeout(changePicture, 31800);
   }
 
-  document.documentElement.style
-    .setProperty('--header', pictures[0]);
+  useEffect(() => {
+    setTimeout(changePicture, 31800);
+  }, []);
 
   return (
     <div className="page">
