@@ -51,12 +51,25 @@ function App() {
   return (
     <div className="page">
       <>
-      <header className='header' style={{ backgroundImage: `url(${currentPictures[0]})`}}>
-      </header>
+      <header 
+        className='header' 
+        style={{ backgroundImage: `url(${currentPictures[0]})`}}
+        data-testid={`header`}
+      ></header>
       <main className='main'>
-        <aside className='asideLeft' style={{ backgroundImage: `url(${currentPictures[1]})`}}></aside>
-        <div className='mainBody' style={{ backgroundImage: `url(${currentPictures[2]})`}}></div>
-        <aside className='asideRight' style={{ backgroundImage: `url(${currentPictures[3]})`}}></aside>
+        <aside 
+          className='asideLeft' 
+          style={{ backgroundImage: `url(${currentPictures[1]})`}}
+          data-testid={`asideLeft`}></aside>
+        <div 
+          className='mainBody' 
+          style={{ backgroundImage: `url(${currentPictures[2]})`}}
+          data-testid={`mainBody`}
+        ></div>
+        <aside 
+          className='asideRight' 
+          style={{ backgroundImage: `url(${currentPictures[3]})`}}
+          data-testid={`asideRight`}></aside>
         <button 
           className='button' 
           onClick={changePicture}
@@ -65,7 +78,11 @@ function App() {
           Change pictures
         </button>
       </main>
-      <footer className='footer' style={{ backgroundImage: `url(${currentPictures[4]})`}}></footer>
+      <footer 
+        className='footer' 
+        style={{ backgroundImage: `url(${currentPictures[4]})`}}
+        data-testid={`footer`}
+      ></footer>
       </>
     </div>
   );
